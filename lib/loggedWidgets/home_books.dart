@@ -43,10 +43,11 @@ class _HomeBooksState extends ConsumerState<HomeBooks> {
         child: kitaplar.length > 0
             ? GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    mainAxisExtent: 300,
-                    crossAxisSpacing: 20,
-                    mainAxisSpacing: 20),
+                  crossAxisCount: 2,
+                  mainAxisExtent: 300,
+                  crossAxisSpacing: 20,
+                  mainAxisSpacing: 20,
+                ),
                 itemBuilder: (context, index) {
                   var k = kitaplar[index];
 

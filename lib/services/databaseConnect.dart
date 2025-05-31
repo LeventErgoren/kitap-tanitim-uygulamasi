@@ -7,10 +7,11 @@ final getConnector = FutureProvider<Connection>((ref) async {
   print("DATABASE");
   final conn = await Connection.open(
     Endpoint(
-      host: '172.31.112.1',
-      database: 'Kitap_Proje',
+      host: '185.169.180.103',
+      database: 'kitap_tanitim',
       username: 'postgres',
       password: '196262',
+      port: 7218,
     ),
     settings: ConnectionSettings(sslMode: SslMode.disable),
   );

@@ -17,12 +17,13 @@ final loginUser = FutureProvider<bool>((ref) async {
 
     if (result.length > 0) {
       User user = new User(
-          kullanici_adi: result[0][1].toString(),
-          sifre: result[0][2].toString(),
-          isim: result[0][3].toString(),
-          soyisim: result[0][4].toString(),
-          cinsiyet: result[0][5].toString(),
-          kayit_tarihi: result[0][6] as DateTime);
+        kullanici_adi: result[0][1].toString(),
+        sifre: result[0][2].toString(),
+        isim: result[0][3].toString(),
+        soyisim: result[0][4].toString(),
+        cinsiyet: result[0][5].toString(),
+        kayit_tarihi: result[0][6] as DateTime,
+      );
 
       ref.read(LoggedUser.notifier).state = user;
 

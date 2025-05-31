@@ -45,7 +45,7 @@ class _LoggedScreenState extends ConsumerState<LoggedScreen> {
           nowIndex = value;
 
           _pageController.animateToPage(value,
-              duration: Duration(milliseconds: 250), curve: Curves.linear);
+              duration: Duration(milliseconds: 600), curve: Curves.easeOutQuint);
           setState(() {});
         },
         currentIndex: nowIndex,
@@ -93,7 +93,7 @@ class _LoggedScreenState extends ConsumerState<LoggedScreen> {
           SizedBox(height: 20),
           Expanded(
             child: HomeBooks(),
-          ),
+          ),  
         ],
       ),
     );

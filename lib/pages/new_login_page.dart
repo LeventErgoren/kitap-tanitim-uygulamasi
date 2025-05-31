@@ -15,8 +15,9 @@ class NewLoginPage extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/pictures/deneme.gif'),
-                fit: BoxFit.cover),
+              image: AssetImage('assets/pictures/deneme.gif'),
+              fit: BoxFit.cover,
+            ),
           ),
           child: Container(
             width: double.infinity,
